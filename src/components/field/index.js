@@ -354,6 +354,7 @@ export default class TextField extends PureComponent {
       containerStyle,
       inputContainerStyle: inputContainerStyleOverrides,
       clearTextOnFocus,
+      accessorySize,
       ...props
     } = this.props;
 
