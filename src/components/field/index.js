@@ -27,6 +27,7 @@ export default class TextField extends PureComponent {
     disableFullscreenUI: true,
     autoCapitalize: 'sentences',
     editable: true,
+    accessorySize: 0,
 
     animationDuration: 225,
 
@@ -495,6 +496,7 @@ export default class TextField extends PureComponent {
       focused,
       errored,
       restricted,
+      accessorySize,
       ...labelProps,
       style: labelTextStyle,
     };

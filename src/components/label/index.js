@@ -10,6 +10,7 @@ export default class Label extends PureComponent {
     focused: false,
     errored: false,
     restricted: false,
+    accessorySize: 0,
   };
 
   static propTypes = {
@@ -91,6 +92,7 @@ export default class Label extends PureComponent {
       active,
       focused,
       animationDuration,
+      accessorySize
       ...props
     } = this.props;
 
@@ -121,6 +123,8 @@ export default class Label extends PureComponent {
     let containerStyle = {
       position: 'absolute',
       top,
+      left: 0,
+      right: accessorySize,
     };
 
     return (
