@@ -22,7 +22,7 @@ export default class Helper extends PureComponent {
 
     return (
       <View style={styles.container}>
-        <Animated.Text style={[styles.text, style]} {...props}>
+        <Animated.Text style={[styles.text, style]} {...props}  numberOfLines={2}>
           {children}
         </Animated.Text>
       </View>
